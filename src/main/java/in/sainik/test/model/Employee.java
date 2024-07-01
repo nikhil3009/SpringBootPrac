@@ -1,5 +1,7 @@
 package in.sainik.test.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.util.Objects;
 
 public class Employee {
@@ -7,6 +9,7 @@ public class Employee {
     private String firstName;
     private String lastName;
     private String emailId;
+    @JsonIgnore
     private String department;
 
     public String getEmpId() {
